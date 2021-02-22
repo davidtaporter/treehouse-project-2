@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    text-align: center;
+    font-size: 18px;
+}
+/* General Styles and Fonts */
+body{
+    font: 300 100%/1.5 'Quicksand', sans-serif;
+}
+header{
+    padding: 1rem;
+    margin: -1rem -1rem 1rem;
+}
+footer{
+    padding: 1rem .5rem 0;
+    margin: 1rem -1rem -1rem;
+}
+header, footer{
+    background-color: #fafafa;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li{
+    width: 95%;
+    margin: 5px auto;
+    display: block;
+    background-color: white;
+    padding: .5rem 0;
+}
+h2{
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+h1, h3, .end, ul{
+    font: 700 100%/1.5 'Karla', sans-serif;
+}
+footer ul li{
+    font-weight: 300;
+    padding: .5rem;
+}
+h1{
+    font-size: 1.5rem;
+    margin: .5rem auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+a:hover {
+    color:darkkhaki;
+    transition: .25s;
+}
+/* Positions */
+p{
+    width: 95%;
+    padding: .5rem;
+}
+.card h2, p{
+    margin: .5rem auto;
+}
+.card, h3{
+    padding: 1rem;
+}
+.card-image{
+    width: 95%;
+}
+.profile-image{
+    width: 70%;
+}
+.end{
+    display: inline-block;
+    border-top: thin solid #e7e7e7;
+    padding: 1.5rem 0;
+    margin: 2rem auto 0;
+    text-align: left;
+    width: 90%;
+}
+footer .top, .end-nav{
+    float: right;
+}
+br{
+    display: none;
+}
+.end-nav{
+    display: none;
+}
+/* Media Queries */
+
+@media (min-width: 768px){
+
+    .main-nav ul li{
+        display: inline-block;
+        width:auto;
+        padding: 0 1rem;
+        background-color: #fafafa;
+    }
+    .profile-image{
+        width: 40%;
+        float: right;
+        position: relative;
+    }
+    .profile-image, .intro p{
+        display: block;
+        margin: auto 0;
+        padding: 1rem 1.75vw;
+        text-align: left;
+    }
+    br{
+        display: initial;
+        clear: both;
+        padding-bottom: 4rem;
+    }
+    .card{
+        width: 49%;
+        display: inline-block;
+        padding: 0 0 2rem;
+    }
+    .top{
+        display: none;
+    }
+    .end-nav{
+        display: initial;
+        padding-left: 1rem;
+    }
+    footer{
+        padding-bottom: 4rem;
+    }
+}
+
+@media (min-width: 1024px){
+    html{
+        background-color: #fafafa;
+    }
+    h1{
+        text-align: left;
+        padding: 0 1rem;
+        margin: .5rem 3.5vw;
+        width: 40%;
+        float: left;
+    }
+    .main-nav{
+        width: auto;
+        float: right;
+    }
+    .home{
+        clear: both;
+    }
+    main{
+        background-color: white;
+    }
+    .profile-image{
+        width: 50%;
+        margin: 0 1rem;
+        padding: 1rem 3.5vw;
+    }
+    .card{
+        width: 30%
+    }
+    footer{
+        padding-bottom: 0;
+    }
+    .main-nav ul li{
+        padding: 0 0 0 1rem;
+    }
+    .main-nav ul{
+        margin:0 1rem;
+        padding: .5rem 3.5vw;
+    }
+    .intro p{
+        width: 50%;
+        margin: 0 1rem;
+        padding: 1rem 3.5vw;
+    }
+    #portfolio{
+        padding: 2rem;
+    }
+    footer p{
+        width: 50%;
+    }
+}
